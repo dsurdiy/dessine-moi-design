@@ -1,0 +1,94 @@
+.header {
+  background-color: $bg;
+
+  &__body {
+    min-height: 8.125rem;
+    display: flex;
+    align-items: center;
+    padding: 1.5625rem 0;
+  }
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 0.3125rem;
+
+  &__title {
+    @extend %roboto-700;
+    font-size: 1rem;
+    line-height: 146%; /* 23.36px/16px */
+    letter-spacing: 0.14rem;
+    span {
+      color: $accent;
+    }
+  }
+}
+
+.menu {
+  margin-left: auto;
+  margin-right: 4.6875rem;
+
+  &__list {
+    display: flex;
+  }
+
+  &__link {
+    padding: 0.9375rem 1.5625rem;
+    @extend %worksans-400;
+    font-size: 1rem;
+    text-transform: uppercase;
+    position: relative;
+    transition: all 0.3s ease;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -2.5rem;
+      left: 50%;
+      width: 0;
+      height: 0.25rem;
+      background-color: $accent;
+      transition: all 0.3s ease;
+    }
+
+    &:hover,
+    &:focus {
+      font-weight: 500;
+      color: $accent;
+      &::after {
+        width: 100%;
+        left: 0;
+      }
+    }
+  }
+}
+
+.social {
+  display: flex;
+  column-gap: 0.9375rem;
+
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3.125rem;
+    height: 3.125rem;
+    padding: 0.625rem;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+
+    path {
+      transition: all 0.3s ease;
+    }
+
+    &:hover,
+    &:focus {
+      background-color: $accent;
+      path {
+        fill: $main;
+      }
+    }
+  }
+}

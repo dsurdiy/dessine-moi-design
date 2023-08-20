@@ -1,0 +1,82 @@
+body {
+  @extend %worksans-300;
+  color: $main;
+  font-size: 1.125rem;
+  line-height: 2.475rem;
+}
+
+.wrapper {
+  max-width: 120rem;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: clip;
+  margin: 0 auto;
+}
+
+.page {
+  flex: 1 1 auto;
+}
+
+[class*="__container"] {
+  max-width: 98.75rem;
+  padding-left: 0.9375rem;
+  padding-right: 0.9375rem;
+  margin: 0 auto;
+}
+
+.title {
+  color: $main;
+  @extend %playfair-700;
+  font-size: 3rem;
+  line-height: normal;
+  letter-spacing: 0.06rem;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    top: -0.4375rem;
+    left: -2.25rem;
+    z-index: -1;
+    width: 5.25rem;
+    height: 5.25rem;
+    background-color: $accent;
+    border-radius: 50%;
+  }
+}
+
+.subtitle {
+  color: $main;
+  @extend %worksans-400;
+  font-size: 1.625rem;
+  line-height: 2.925rem;
+}
+
+.button {
+  display: inline-block;
+  height: 3.5rem;
+  border: 1px solid #a4b7b1;
+  padding: 18px 32px;
+  color: $main;
+  @extend %worksans-500;
+  font-size: 1rem;
+  line-height: normal;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  &::after {
+    content: "";
+    display: inline-block;
+    width: 1.125rem;
+    height: 0.625rem;
+    background-image: url("../img/icons/btn-arrow.svg");
+    margin-left: 0.5rem;
+    transition: all 0.3s ease;
+  }
+  &:hover,
+  &:focus {
+    background-color: $accent;
+    &::after {
+      margin-left: 1.25rem;
+    }
+  }
+}
