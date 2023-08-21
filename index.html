@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+  <link rel="icon" href="img/icons/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
   <link rel="stylesheet" href="css/style.min.css" />
   <title>dessine.moi.design</title>
 </head>
@@ -66,11 +67,54 @@
       </div>
     </header>
 
-    <main class="page"></main>
+    <main class="page">
+      <section class="page__hero hero section">
+        <div class="hero__container">
+          <div class="hero__content">
+            <h1 class="hero__title title">My world of <span>interior</span> design</h1>
+            <p class="hero__text">
+              Drawing helps to imagine, test ideas, compose. So, if you also like drawings follow my page and join
+              my universe
+            </p>
+            <a class="hero__btn button" href="#">View Project</a>
+          </div>
+          <div class="hero__slider slider-hero swiper">
+            <div class="slider-hero__wrapper swiper-wrapper">
+              <div class="slider-hero__slide swiper-slide">
+                <img src="img/hero-slider/40-1.jpg" alt="Image" loading="lazy">
+                <div class="swiper-lazy-preloader"></div>
+              </div>
+              <div class="slider-hero__slide swiper-slide">
+                <img src="img/hero-slider/39-1.jpg" alt="Image" loading="lazy">
+                <div class="swiper-lazy-preloader"></div>
+              </div>
+              <div class="slider-hero__slide swiper-slide">
+                <img src="img/hero-slider/05.jpeg" alt="Image" loading="lazy">
+                <div class="swiper-lazy-preloader"></div>
+              </div>
+              <div class="slider-hero__slide swiper-slide">
+                <img src="img/hero-slider/11-1.jpg" alt="Image" loading="lazy">
+                <div class="swiper-lazy-preloader"></div>
+              </div>
+              <div class="slider-hero__slide swiper-slide">
+                <img src="img/hero-slider/08.jpg" alt="Image" loading="lazy">
+                <div class="swiper-lazy-preloader"></div>
+              </div>
+              <div class="slider-hero__slide swiper-slide">
+                <img src="img/hero-slider/01.jpeg" alt="Image" loading="lazy">
+                <div class="swiper-lazy-preloader"></div>
+              </div>
+            </div>
+            <div class="slider-hero__pagination swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+    </main>
 
     <footer class="footer"></footer>
   </div>
 
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
   <script src="js/script.js"></script>
 </body>
 

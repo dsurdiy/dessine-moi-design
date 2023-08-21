@@ -1,10 +1,19 @@
+/* ----------- FONTS ----------- */
 @import url(https://fonts.googleapis.com/css?family=Work+Sans:300,regular,500,700&display=swap);
 @import url(https://fonts.googleapis.com/css?family=Playfair+Display:regular,700&display=swap);
 @import url(https://fonts.googleapis.com/css?family=Roboto+Mono:700&display=swap);
 
+/* ----------- RESET styles ----------- */
 @import "reset";
+
+/* ----------- VARIABLES ----------- */
 @import "vars";
+
+/* ----------- MAIN styles ----------- */
 @import "common";
+
+/* ----------- HEADER ----------- */
 @import "header";
 
-
+/* ----------- HOMEPAGE ----------- */
+@import "homepage";

@@ -1,0 +1,91 @@
+/* ----------- HERO ----------- */
+
+.hero {
+  position: relative;
+  &__container {
+    min-height: calc(100vh - 130px);
+    display: flex;
+  }
+  &__content {
+    flex: 0 0 28.75rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  &__title {
+    font-size: 4.125rem;
+    line-height: 126%;
+    letter-spacing: 0.0825rem;
+    margin-bottom: 1.375rem;
+    span {
+      color: $accent;
+    }
+    &::before {
+      display: none;
+    }
+  }
+  &__text {
+    margin-bottom: 3.75rem;
+  }
+  &__slider {
+    position: absolute;
+    width: 60%;
+    right: 0;
+    top: 0;
+    height: 100%;
+    img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  .slider-hero__pagination.swiper-pagination {
+    transform: none;
+    top: auto;
+    right: 18.6%;
+    bottom: 9.213759%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3125rem;
+
+    .swiper-pagination-bullet {
+      width: auto;
+      height: auto;
+      background-color: transparent;
+      color: $main;
+      @extend %worksans-700;
+      letter-spacing: 0.0225rem;
+      opacity: 0.5;
+      transition: all 0.3s ease;
+      position: relative;
+      &::after {
+        content: "";
+        position: absolute;
+        top: 1.125rem;
+        right: -1.125rem;
+        width: 0.5625rem;
+        height: 0.1875rem;
+        background-color: $accent;
+        opacity: 0.5;
+        transition: all 0.3s ease;
+      }
+    }
+
+    .swiper-pagination-bullet.swiper-pagination-bullet-active {
+      opacity: 1;
+      &::after {
+        right: -3.0625rem;
+        width: 2.5rem;
+        opacity: 1;
+      }
+    }
+  }
+}
+
+/* -----------  ----------- */
+
+/* -----------  ----------- */
+
+/* -----------  ----------- */
