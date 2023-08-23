@@ -28,6 +28,7 @@ body {
 .section {
   position: relative;
   background-color: $secondary-bg;
+  padding: 10rem 0;
 
   &::after {
     content: "";
@@ -75,8 +76,10 @@ body {
 .button {
   display: inline-block;
   height: 3.5rem;
-  border: 1px solid #a4b7b1;
-  padding: 18px 32px;
+  border: 0.0625rem solid #a4b7b1;
+  box-shadow: rgba(149, 157, 165, 0.2) 0rem 0.5rem 1.5rem;
+  padding: 1.125rem 2rem;
+  border-radius: 0.625rem;
   color: $main;
   @extend %worksans-500;
   font-size: 1rem;
