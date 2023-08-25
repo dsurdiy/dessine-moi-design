@@ -27,4 +27,26 @@ function windowLoad() {
       },
     });
   }
+
+  if (document.querySelector(".slider-portfolio")) {
+    new Swiper(".slider-portfolio", {
+      navigation: {
+        nextEl: '.slider-portfolio__button-next',
+        prevEl: '.slider-portfolio__button-prev',
+      },
+      loop: true,
+      slidesPerView: 3,
+      grid: {
+        fill: "row",
+        rows: 2,
+      },
+      spaceBetween: 30,
+      speed: 800,
+      keyboard: {
+        enabled: true,
+        onlyInViewport: true,
+        pageUpDown: true,
+      },
+    });
+  }
 }
