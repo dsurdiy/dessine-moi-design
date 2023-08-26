@@ -34,7 +34,10 @@ function windowLoad() {
         nextEl: '.slider-portfolio__button-next',
         prevEl: '.slider-portfolio__button-prev',
       },
-      loop: true,
+      pagination: {
+        el: '.slider-portfolio__pagination',
+        clickable: true,
+      },
       slidesPerView: 3,
       grid: {
         fill: "row",
