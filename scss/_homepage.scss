@@ -310,6 +310,7 @@
   &__header {
     display: flex;
     gap: 1.875rem;
+    margin-bottom: 9.375rem;
   }
 
   &__content {
@@ -361,6 +362,18 @@
   }
 
   &__images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    place-items: center;
+
+    img {
+      max-width: 100%;
+
+      &:nth-child(5) {
+        grid-column: span 2;
+      }
+    }
   }
 }
 
