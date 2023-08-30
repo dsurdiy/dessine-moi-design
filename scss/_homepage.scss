@@ -304,7 +304,66 @@
   }
 }
 
-/* -----------  ----------- */
+/* ----------- SERVICES ----------- */
+
+.services {
+  &__header {
+    display: flex;
+    gap: 1.875rem;
+  }
+
+  &__content {
+    flex: 0 1 50%;
+  }
+
+  &__title {
+    &:not(:last-child) {
+      margin-bottom: 2.8125rem;
+    }
+  }
+
+  &__subtitle {
+    &:not(:last-child) {
+      margin-bottom: 1.25rem;
+    }
+  }
+
+  &__list {
+    &:not(:last-child) {
+      margin-bottom: 1.25rem;
+    }
+  }
+
+  &__item {
+    font-weight: 400;
+    span {
+      color: $accent;
+      font-weight: 700;
+    }
+  }
+
+  &__text {
+    &:not(:last-child) {
+      margin-bottom: 2.1875rem;
+    }
+    p {
+      &:not(:last-child) {
+        margin-bottom: 1.25rem;
+      }
+    }
+  }
+
+  &__main-image {
+    flex: 0 1 50%;
+    img {
+      max-width: 100%;
+    }
+  }
+
+  &__images {
+  }
+}
+
 /* -----------  ----------- */
 /* -----------  ----------- */
 /* -----------  ----------- */
