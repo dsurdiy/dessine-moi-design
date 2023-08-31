@@ -389,9 +389,6 @@
     transform: rotate(270deg);
   }
 
-  &__container {
-  }
-
   &__title {
     display: inline-block;
     &:not(:last-child) {
@@ -448,12 +445,87 @@
     font-size: 28px;
     line-height: 145%;
     letter-spacing: 0.56px;
-  }
-
-  &__btn {
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }
 
-/* -----------  ----------- */
+/* -----------  CONTACT ----------- */
+
+.contact {
+  padding: 9.375rem 0;
+  background-color: $secondary-bg;
+  &__container {
+    padding: 0 10rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  &__content {
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: -12.5rem;
+      width: 18.75rem;
+      height: 18.75rem;
+      background-image: url("../img/decor/dots.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+
+  &__title {
+    position: relative;
+    z-index: 1;
+    font-size: 4.125rem;
+    line-height: 140%;
+    &::before {
+      display: none;
+    }
+  }
+
+  &__text {
+    position: relative;
+    z-index: 1;
+  }
+
+  &__email {
+    font-weight: 400;
+    transition: color 0.3s;
+
+    &:hover,
+    &:focus {
+      color: $accent;
+    }
+  }
+
+  &__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 1 17.75rem;
+    height: 5.4375rem;
+    padding: 0.625rem;
+    background-color: $main;
+    color: $bg;
+    font-weight: 500;
+    text-transform: uppercase;
+    border-radius: 0.625rem;
+    transition: all 0.3s;
+
+    &:hover,
+    &:focus {
+      background-color: $accent;
+      color: $main;
+    }
+  }
+}
+
 /* -----------  ----------- */
 /* -----------  ----------- */
