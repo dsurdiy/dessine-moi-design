@@ -2,6 +2,8 @@ window.addEventListener("load", windowLoad);
 window.addEventListener("scroll", pageScroll);
 
 function windowLoad() {
+  document.documentElement.classList.add("loaded");
+
   if (document.querySelector(".slider-hero")) {
     new Swiper(".slider-hero", {
       direction: "vertical",
@@ -19,7 +21,7 @@ function windowLoad() {
         onlyInViewport: true,
       },
       autoplay: {
-        delay: 3000,
+        delay: 4500,
       },
       speed: 800,
       effect: "fade",

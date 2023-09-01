@@ -110,3 +110,62 @@ body {
     }
   }
 }
+
+/* ------- Animation elements -------- */
+
+.loaded .hero__slider {
+  transform: translate(0, 0);
+}
+
+[data-item] {
+  transform: translate(0px, 3.125rem);
+  opacity: 0;
+  transition: all 0.8s;
+}
+
+[data-item].active {
+  transform: translate(0, 0);
+  opacity: 1;
+}
+
+[data-item].hero__title,
+[data-item].about__title,
+[data-item].about__photo,
+[data-item].images__top,
+[data-item].portfolio__title,
+[data-item].services__title,
+[data-item].blog__title,
+[data-item].contact__content {
+  transition-delay: 0.3s;
+}
+
+[data-item].hero__text,
+[data-item].about__subtitle,
+[data-item].images__bottom,
+[data-item].portfolio__subtitle,
+[data-item].services__subtitle,
+[data-item].blog__subtitle,
+[data-item].footer__top {
+  transition-delay: 0.5s;
+}
+
+[data-item].hero__btn,
+[data-item].about__text,
+[data-item].portfolio__slider,
+[data-item].services__list,
+[data-item].blog__items,
+[data-item].blog__btn,
+[data-item].contact__btn,
+[data-item].footer__bottom {
+  transition-delay: 0.7s;
+}
+
+[data-item].services__text,
+[data-item].services__images img {
+  transition-delay: 0.9s;
+}
+
+[data-item].services__btn,
+[data-item].services__main-image {
+  transition-delay: 1.1s;
+}
