@@ -1,3 +1,7 @@
+:root {
+  scroll-behavior: smooth;
+}
+
 body {
   @extend %worksans-300;
   color: $main;

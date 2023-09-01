@@ -1,0 +1,120 @@
+.footer {
+  padding-top: 7.5rem;
+  background-color: $bg;
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 6.6875rem;
+    height: 6.6875rem;
+    background-image: url("../img/decor/corner.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: rotate(180deg);
+  }
+
+  &__container {
+    padding: 0 10rem;
+  }
+
+  &__top {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    gap: 1.5625rem;
+    padding-bottom: 4.6875rem;
+  }
+
+  &__column {
+    text-align: center;
+  }
+
+  &__logo {
+    &:not(:last-child) {
+      margin-bottom: 1.875rem;
+    }
+  }
+
+  &__text {
+    p {
+      line-height: 170%;
+    }
+  }
+
+  &__title {
+    @extend %playfair-400;
+    font-size: 24px;
+    &:not(:last-child) {
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  &__address {
+    font-style: normal;
+    &:not(:last-child) {
+      margin-bottom: 1.5625rem;
+    }
+  }
+
+  &__email {
+    display: block;
+    font-weight: 400;
+    transition: color 0.3s ease;
+    &:hover,
+    &:focus {
+      color: $accent;
+    }
+  }
+
+  &__location {
+    display: flex;
+    align-items: center;
+    gap: 0.625rem;
+    &::before {
+      content: "";
+      width: 0.9375rem;
+      height: 1.25rem;
+      background-image: url("../img/icons/location.svg");
+    }
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+    }
+  }
+
+  &__social {
+    gap: 5px;
+  }
+
+  &__bottom {
+    padding: 2.1875rem 0;
+    text-align: center;
+    border-top: 0.0625rem solid #e5e7dd;
+  }
+
+  &__copy {
+    span {
+      font-weight: 400;
+    }
+  }
+}
+
+.footer-menu {
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 0.625rem;
+    }
+  }
+
+  &__link {
+    padding: 0.625rem;
+    &:hover,
+    &:focus {
+      color: $accent;
+      font-weight: 500;
+      text-decoration: underline;
+    }
+  }
+}
