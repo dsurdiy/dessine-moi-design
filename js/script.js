@@ -1,4 +1,5 @@
 window.addEventListener("load", windowLoad);
+window.addEventListener("scroll", pageScroll);
 
 function windowLoad() {
   if (document.querySelector(".slider-hero")) {
@@ -52,4 +53,10 @@ function windowLoad() {
       },
     });
   }
+}
+
+function pageScroll() {
+  scrollY > 50
+    ? document.querySelector(".header").classList.add("scroll")
+    : document.querySelector(".header").classList.remove("scroll");
 }

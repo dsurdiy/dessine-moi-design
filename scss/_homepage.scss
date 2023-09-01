@@ -2,10 +2,11 @@
 
 .hero {
   padding: 0;
+  margin-top: 8rem;
   position: relative;
 
   &__container {
-    min-height: calc(100vh - 130px);
+    min-height: calc(100vh - 8rem);
     display: flex;
   }
 

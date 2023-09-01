@@ -1,11 +1,29 @@
 .header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 50;
   background-color: $bg;
+  transition: all 0.5s;
+
+  &.scroll {
+    background-color: #f9eed4;
+  }
+
+  &.scroll .header__body {
+    padding: 0.625rem 0;
+  }
 
   &__body {
-    min-height: 8.125rem;
     display: flex;
     align-items: center;
     padding: 1.5625rem 0;
+    transition: all 0.5s;
+  }
+
+  &.scroll .menu__link::after {
+    bottom: -1.5625rem;
   }
 }
 
@@ -28,7 +46,7 @@
   &__title {
     @extend %roboto-700;
     font-size: 1rem;
-    line-height: 146%; /* 23.36px/16px */
+    line-height: 146%;
     letter-spacing: 0.14rem;
     transition: all 0.3s ease;
     span {
