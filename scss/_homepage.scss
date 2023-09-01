@@ -358,6 +358,10 @@
     flex: 0 1 50%;
     img {
       max-width: 100%;
+      transition: all 0.5s;
+    }
+    &:hover img {
+      transform: scale(1.05);
     }
   }
 
@@ -366,12 +370,14 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
     place-items: center;
-
     img {
       max-width: 100%;
-
+      transition: all 0.5s;
       &:nth-child(5) {
         grid-column: span 2;
+      }
+      &:hover {
+        transform: scale(1.05);
       }
     }
   }
