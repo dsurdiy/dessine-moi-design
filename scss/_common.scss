@@ -7,6 +7,12 @@ body {
   color: $main;
   font-size: 1.125rem;
   line-height: 220%;
+
+  @media (max-width: 47.9375em) {
+    &.lock {
+      overflow: hidden;
+    }
+  }
 }
 
 .wrapper {

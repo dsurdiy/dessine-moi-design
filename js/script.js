@@ -67,6 +67,8 @@ const menuBtn = document.querySelector(".menu__burger");
 
 menuBtn.addEventListener("click", function () {
   const menuList = document.querySelector(".menu__list");
+
+  document.querySelector("body").classList.toggle("lock");
   menuList.classList.toggle("active");
   menuBtn.classList.toggle("active");
 });
