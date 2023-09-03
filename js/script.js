@@ -62,3 +62,11 @@ function pageScroll() {
     ? document.querySelector(".header").classList.add("scroll")
     : document.querySelector(".header").classList.remove("scroll");
 }
+
+const menuBtn = document.querySelector(".menu__burger");
+
+menuBtn.addEventListener("click", function () {
+  const menuList = document.querySelector(".menu__list");
+  menuList.classList.toggle("active");
+  menuBtn.classList.toggle("active");
+});
