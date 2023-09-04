@@ -178,6 +178,15 @@
 
 .about {
   background-color: $bg;
+  @media (max-width: 75em) {
+    line-height: 180%;
+  }
+  @media (max-width: 62.5em) {
+    text-align: center;
+  }
+  @media (max-width: 29.625em) {
+    line-height: 160%;
+  }
 
   &::after {
     left: auto;
@@ -193,13 +202,31 @@
     &:hover img {
       transform: scale(1.2);
     }
+    @media (max-width: 75em) {
+      align-items: flex-start;
+      column-gap: 3.75rem;
+    }
+    @media (max-width: 62.5em) {
+      column-gap: 1.875rem;
+    }
+    @media (max-width: 47.9375em) {
+      flex-direction: column-reverse;
+      row-gap: 1.875rem;
+    }
   }
 
   &__photo {
-    flex: 0 0 34.375rem;
+    flex: 0 0 40%;
     border-radius: 0.9375rem;
     overflow: hidden;
     box-shadow: rgba(100, 100, 111, 0.2) 0rem 0.4375rem 1.8125rem 0rem;
+    @media (max-width: 47.9375em) {
+      max-width: 28.75rem;
+      margin: 0 auto;
+    }
+    @media (max-width: 29.625em) {
+      max-width: 21.875rem;
+    }
 
     img {
       max-width: 100%;
@@ -210,10 +237,25 @@
 
   &__title {
     margin-bottom: 2.8125rem;
+    @media (max-width: 75em) {
+      margin-bottom: 1.875rem;
+    }
+    @media (max-width: 62.5em) {
+      display: inline-block;
+    }
+    @media (max-width: 47.9375em) {
+      margin-bottom: 0.9375rem;
+    }
   }
 
   &__subtitle {
     margin-bottom: 1.25rem;
+    @media (max-width: 75em) {
+      line-height: inherit;
+    }
+    @media (max-width: 47.9375em) {
+      margin-bottom: 0.625rem;
+    }
   }
 
   &__text {
@@ -222,6 +264,9 @@
     }
     p:not(:last-child) {
       margin-bottom: 0.625rem;
+    }
+    @media (max-width: 62.5em) {
+      text-align: left;
     }
   }
 }
