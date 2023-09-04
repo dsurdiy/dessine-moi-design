@@ -75,6 +75,10 @@ body {
       width: 3.125rem;
       height: 3.125rem;
     }
+    @media (max-width: 29.625em) {
+      width: 1.875rem;
+      height: 1.875rem;
+    }
   }
 }
 
