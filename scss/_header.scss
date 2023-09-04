@@ -39,7 +39,6 @@
   row-gap: 0.3125rem;
   position: relative;
   z-index: 2;
-
   &:hover,
   &:focus {
     .logo__title {
@@ -60,7 +59,6 @@
       color: $accent;
       transition: all 0.3s ease;
     }
-
     @media (max-width: 75em) {
       font-size: 0.875rem;
     }
@@ -144,7 +142,6 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-
     @media (max-width: 47.9375em) {
       position: absolute;
       top: 0;
@@ -201,7 +198,7 @@
     @media (max-width: 75em) {
       padding: 0.75rem;
       &::after {
-        bottom: -2.25rem;
+        bottom: -2.3125rem;
       }
     }
     @media (max-width: 62.5em) {
@@ -220,7 +217,9 @@
   column-gap: 0.9375rem;
   position: relative;
   z-index: 2;
-
+  @media (max-width: 75em) {
+    column-gap: 0.3125rem;
+  }
   @media (max-width: 47.9375em) {
     margin-left: auto;
   }
@@ -234,11 +233,9 @@
     padding: 0.625rem;
     border-radius: 50%;
     transition: all 0.3s ease;
-
     path {
       transition: all 0.3s ease;
     }
-
     &:hover,
     &:focus {
       background-color: $accent;
@@ -246,15 +243,10 @@
         fill: $main;
       }
     }
-
     @media (max-width: 62.5em) {
       width: auto;
       height: auto;
       padding: 0.4375rem;
     }
-  }
-
-  @media (max-width: 75em) {
-    column-gap: 0.3125rem;
   }
 }

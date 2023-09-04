@@ -51,6 +51,10 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: left;
+    @media (max-width: 47.9375em) {
+      width: 3.125rem;
+      height: 3.125rem;
+    }
   }
 }
 
@@ -96,6 +100,12 @@ body {
   line-height: normal;
   text-transform: uppercase;
   transition: all 0.3s ease;
+  @media (max-width: 29.625em) {
+    display: flex;
+    align-items: center;
+    height: 2.8125rem;
+    padding: 0.625rem 0.9375rem;
+  }
 
   &::after {
     content: "";
