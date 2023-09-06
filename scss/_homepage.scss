@@ -569,19 +569,47 @@
 /* ----------- SERVICES ----------- */
 
 .services {
+  @media (max-width: 47.9375em) {
+    line-height: 160%;
+  }
+
   &__header {
     display: flex;
     gap: 1.875rem;
-    margin-bottom: 9.375rem;
+    &:not(:last-child) {
+      margin-bottom: 9.375rem;
+      @media (max-width: 75em) {
+        margin-bottom: 6.25rem;
+      }
+      @media (max-width: 62.5em) {
+        margin-bottom: 3.75rem;
+      }
+      @media (max-width: 29.625em) {
+        margin-bottom: 1.875rem;
+      }
+    }
+    @media (max-width: 47.9375em) {
+      flex-direction: column;
+      gap: 40px;
+    }
   }
 
   &__content {
     flex: 0 1 50%;
+    @media (max-width: 47.9375em) {
+      text-align: center;
+    }
   }
 
   &__title {
     &:not(:last-child) {
       margin-bottom: 2.8125rem;
+      @media (max-width: 62.5em) {
+        margin-bottom: 1.5625rem;
+      }
+    }
+    @media (max-width: 47.9375em) {
+      display: inline-block;
     }
   }
 
@@ -589,11 +617,17 @@
     &:not(:last-child) {
       margin-bottom: 1.25rem;
     }
+    @media (max-width: 62.5em) {
+      line-height: 150%;
+    }
   }
 
   &__list {
     &:not(:last-child) {
       margin-bottom: 1.25rem;
+      @media (max-width: 62.5em) {
+        margin-bottom: 0.625rem;
+      }
     }
   }
 
@@ -608,6 +642,9 @@
   &__text {
     &:not(:last-child) {
       margin-bottom: 2.1875rem;
+      @media (max-width: 62.5em) {
+        margin-bottom: 1.25rem;
+      }
     }
     p {
       &:not(:last-child) {
@@ -618,9 +655,17 @@
 
   &__main-image {
     flex: 0 1 50%;
+    text-align: center;
+
     img {
       max-width: 100%;
       transition: all 0.5s;
+      @media (max-width: 47.9375em) {
+        height: 31.25rem;
+      }
+      @media (max-width: 29.625em) {
+        height: 25rem;
+      }
     }
     &:hover img {
       transform: scale(1.05);
@@ -630,11 +675,21 @@
   &__images {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
+    gap: 1.875rem;
     place-items: center;
+    @media (max-width: 29.625em) {
+      gap: 0.9375rem;
+    }
+
     img {
       max-width: 100%;
       transition: all 0.5s;
+      @media (max-width: 62.5em) {
+        max-height: 29.375rem;
+      }
+      @media (max-width: 47.9375em) {
+        max-height: 21.875rem;
+      }
       &:nth-child(5) {
         grid-column: span 2;
       }

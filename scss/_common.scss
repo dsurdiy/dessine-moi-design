@@ -154,7 +154,7 @@ body {
   text-transform: uppercase;
   transition: all 0.3s ease;
   @media (max-width: 29.625em) {
-    display: flex;
+    display: inline-flex;
     align-items: center;
     height: 2.8125rem;
     padding: 0.625rem 0.9375rem;
