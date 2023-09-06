@@ -41,18 +41,51 @@ function windowLoad() {
         el: '.slider-portfolio__pagination',
         clickable: true,
       },
-      slidesPerView: 3,
+      slidesPerView: 1,
+      spaceBetween: 15,
       grid: {
         fill: "row",
         rows: 2,
       },
-      spaceBetween: 30,
       speed: 800,
       keyboard: {
         enabled: true,
         onlyInViewport: true,
         pageUpDown: true,
       },
+      breakpoints: {
+        320: {
+          slidesPerView: 1,
+          grid: {
+            fill: "row",
+            rows: 2,
+          },
+        },
+        570: {
+          slidesPerView: 2,
+          spaceBetween: 15,
+          grid: {
+            fill: "row",
+            rows: 2,
+          },
+        },
+        768: {
+          slidesPerView: 3,
+          grid: {
+            fill: "row",
+            rows: 2,
+          },
+          spaceBetween: 20
+        },
+        1000: {
+          slidesPerView: 3,
+          spaceBetween: 30,
+          grid: {
+            fill: "row",
+            rows: 2,
+          },
+        }
+      }
     });
   }
 }
