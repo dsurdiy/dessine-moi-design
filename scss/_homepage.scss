@@ -813,12 +813,36 @@
 .contact {
   padding: 9.375rem 0;
   background-color: $secondary-bg;
+  @media (max-width: 75em) {
+    padding: 6.25rem 0;
+  }
+  @media (max-width: 62.5em) {
+    padding: 5rem 0;
+  }
+  @media (max-width: 47.9375em) {
+    padding: 3.75rem 0;
+  }
+  @media (max-width: 29.625em) {
+    padding: 2.5rem 0;
+  }
+
   &__container {
     padding: 0 10rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 1.5rem;
+    gap: 2.8125rem;
+    @media (max-width: 87.5em) {
+      padding: 0 5rem;
+    }
+    @media (max-width: 62.5em) {
+      flex-direction: column;
+      text-align: center;
+    }
+    @media (max-width: 47.9375em) {
+      gap: 1.875rem;
+      padding: 0 1.25rem;
+    }
   }
 
   &__content {
@@ -834,6 +858,20 @@
       background-image: url("../img/decor/dots.png");
       background-repeat: no-repeat;
       background-size: cover;
+      @media (max-width: 87.5em) {
+        left: -7.5rem;
+      }
+      @media (max-width: 62.5em) {
+        width: 13.75rem;
+        height: 13.75rem;
+      }
+      @media (max-width: 62.5em) {
+        left: -1.5rem;
+      }
+      @media (max-width: 29.625em) {
+        width: 9.375rem;
+        height: 9.375rem;
+      }
     }
   }
 
@@ -845,11 +883,33 @@
     &::before {
       display: none;
     }
+    @media (max-width: 87.5em) {
+      font-size: 3.3125rem;
+    }
+    @media (max-width: 62.5em) {
+      font-size: 2.625rem;
+      &:not(:last-child) {
+        margin-bottom: 0.625rem;
+      }
+    }
+    @media (max-width: 47.9375em) {
+      font-size: 2.25rem;
+    }
+    @media (max-width: 29.625em) {
+      font-size: 1.75rem;
+    }
+    @media (max-width: 23.125em) {
+      font-size: 1.4375rem;
+    }
   }
 
   &__text {
     position: relative;
     z-index: 1;
+    line-height: 150%;
+    @media (max-width: 23.125em) {
+      font-size: 1rem;
+    }
   }
 
   &__email {
@@ -875,6 +935,17 @@
     text-transform: uppercase;
     border-radius: 0.625rem;
     transition: all 0.3s;
+    @media (max-width: 87.5em) {
+      flex: 0 1 210px;
+      height: 4.375rem;
+    }
+    @media (max-width: 62.5em) {
+      flex: auto;
+      padding: 0.75rem 2.1875rem;
+    }
+    @media (max-width: 47.9375em) {
+      height: 3.75rem;
+    }
 
     &:hover,
     &:focus {
