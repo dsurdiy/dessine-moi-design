@@ -214,7 +214,8 @@ body {
 [data-item].portfolio__subtitle,
 [data-item].services__subtitle,
 [data-item].blog__subtitle,
-[data-item].footer__top {
+[data-item].footer__top,
+[data-item].footer__bottom {
   transition-delay: 0.5s;
 }
 
@@ -224,8 +225,7 @@ body {
 [data-item].services__list,
 [data-item].blog__items,
 [data-item].blog__btn,
-[data-item].contact__btn,
-[data-item].footer__bottom {
+[data-item].contact__btn {
   transition-delay: 0.7s;
 }
 
