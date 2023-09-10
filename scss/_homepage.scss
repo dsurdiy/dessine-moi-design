@@ -20,11 +20,12 @@
     @media (max-width: 75em) {
       min-height: calc(100vh - 7.25rem);
     }
-    @media (max-width: 62.5em) {
-      min-height: calc(100vh - 5.625rem);
+    @media (max-width: 64.0625em) {
+      // min-height: calc(100vh - 5.625rem);
+      min-height: auto;
     }
     @media (max-width: 47.9375em) {
-      min-height: calc(100vh - 3.4375rem);
+      // min-height: calc(100vh - 3.4375rem);
       display: block;
       position: relative;
       overflow: auto;
@@ -40,7 +41,8 @@
     @media (max-width: 75em) {
       flex: 0 0 35%;
     }
-    @media (max-width: 62.5em) {
+    @media (max-width: 64.0625em) {
+      padding: 3.125rem 0;
       text-align: center;
     }
     @media (max-width: 47.9375em) {
@@ -98,7 +100,7 @@
   }
 
   &__btn {
-    @media (max-width: 62.5em) {
+    @media (max-width: 64.0625em) {
       margin: 0 auto;
     }
   }

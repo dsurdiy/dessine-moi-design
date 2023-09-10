@@ -163,9 +163,7 @@
 
   &__item {
     @media (max-width: 47.9375em) {
-      &:not(:last-child) {
-        margin-bottom: 10px;
-      }
+      margin-bottom: 15px;
     }
   }
 
