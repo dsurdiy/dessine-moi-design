@@ -96,12 +96,21 @@ function pageScroll() {
     : document.querySelector(".header").classList.remove("scroll");
 }
 
+const menuList = document.querySelector(".menu__list");
 const menuBtn = document.querySelector(".menu__burger");
 
 menuBtn.addEventListener("click", function () {
-  const menuList = document.querySelector(".menu__list");
-
   document.querySelector("body").classList.toggle("lock");
   menuList.classList.toggle("active");
   menuBtn.classList.toggle("active");
 });
+
+const menuLink = document.querySelectorAll(".menu__link");
+
+menuLink.forEach(link => {
+  link.addEventListener("click", function () {
+    document.querySelector("body").classList.remove("lock");
+    menuList.classList.remove("active");
+    menuBtn.classList.remove("active");
+  })
+})
